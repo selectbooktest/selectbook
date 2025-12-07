@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <title>SSC CGL Tier-I Demo Test | SelectBook</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: #f3f5fb;
+      color: #1f2933;
+    }
+
+    header {
+      background: #0d47a1;
+      color: #fff;
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 14px;
+    }
+
+    .brand {
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    .back-link {
+      color: #ffe57f;
+      text-decoration: none;
+      font-size: 13px;
+    }
+
+    .page-wrap {
+      max-width: 960px;
+      margin: 10px auto 24px;
+      padding: 0 10px 24px;
+    }
+
+    .test-layout {
+      background: #ffffff;
+      border-radius: 14px;
+      box-shadow: 0 4px 18px rgba(15, 23, 42, 0.08);
+      padding: 16px 14px 18px;
+    }
+
+    .test-header {
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 10px;
+      margin-bottom: 14px;
+    }
+
+    .test-title {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .test-meta {
+      font-size: 12px;
+      color: #4b5563;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .meta-pill {
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: #e3f2fd;
+      font-size: 11px;
+    }
+
+    .timer-pill {
+      margin-left: auto;
+      background: #fee2e2;
+      color: #b91c1c;
+      font-weight: 600;
+    }
+
+    @media (max-width: 480px) {
+      .test-meta {
+        gap: 6px;
+      }
+      .timer-pill {
+        margin-left: 0;
+      }
+    }
+
+    .question-card {
+      border-radius: 12px;
+      border: 1px solid #e5e7eb;
+      padding: 12px;
+      background: #f9fafb;
+      margin-bottom: 12px;
+    }
+
+    .q-header {
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .q-text {
+      font-size: 14px;
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+
+    .options-list {
+      list-style: none;
+    }
+
+    .options-list li {
+      margin-bottom: 6px;
+    }
+
+    .option-label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      padding: 6px 8px;
+      border-radius: 8px;
+      border: 1px solid transparent;
+    }
+
+    .option-label input[type="radio"] {
+      transform: scale(1.1);
+    }
+
+    .option-selected {
+      background: #e3f2fd;
+      border-color: #0d47a1;
+    }
+
+    .nav-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      border: none;
+      border-radius: 999px;
+      padding: 7px 16px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    .btn-secondary {
+      background: #e5e7eb;
+      color: #374151;
+    }
+
+    .btn-primary {
+      background: #0d47a1;
+      color: #ffffff;
+    }
+
+    .btn-warning {
+      background: #ffb74d;
+      color: #1f2933;
+    }
+
+    .btn:disabled {
+      opacity: 0.6;
+      cursor: default;
+    }
+
+    .attempt-info {
+      font-size: 11px;
+      color: #4b5563;
+    }
+
+    /* AI Explanation सेक्शन – सिर्फ submit के बाद दिखेगा */
+    .ai-section {
+      border-radius: 12px;
+      border: 1px dashed #93c5fd;
+      background: #eff6ff;
+      padding: 10px 10px 10px;
+      margin-bottom: 12px;
+      display: none; /* शुरुआत में hidden */
+    }
+
+    .ai-title-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 6px;
+    }
+
+    .ai-heading {
+      font-size: 13px;
+      font-weight: 600;
+      color: #0d47a1;
+    }
+
+    .ai-body {
+      font-size: 12px;
+      line-height: 1.45;
+      color: #1f2933;
+    }
+
+    .btn-outline {
+      background: #ffffff;
+      border: 1px solid #0d47a1;
+      color: #0d47a1;
+      border-radius: 999px;
+      padding: 4px 10px;
+      font-size: 11px;
+    }
+
+    /* Result Card */
+    .result-card {
+      border-radius: 14px;
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      padding: 12px 10px 12px;
+      margin-top: 8px;
+    }
+
+    .result-title {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .result-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+
+    .result-item {
+      background: #f9fafb;
+      border-radius: 10px;
+      padding: 6px 8px;
+      font-size: 12px;
+    }
+
+    .result-label {
+      color: #6b7280;
+      font-size: 11px;
+    }
+
+    .result-value {
+      font-weight: 600;
+      margin-top: 2px;
+    }
+
+    .result-message {
+      font-size: 12px;
+      margin-bottom: 6px;
+      color: #374151;
+    }
+
+    .result-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      justify-content: flex-start;
+    }
+
+    .badge {
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 10px;
+      font-weight: 600;
+    }
+
+    .badge-good {
+      background: #dcfce7;
+      color: #166534;
+    }
+
+    .badge-medium {
+      background: #fef9c3;
+      color: #854d0e;
+    }
+
+    .badge-bad {
+      background: #fee2e2;
+      color: #b91c1c;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="brand">SelectBook</div>
+    <a href="index.html" class="back-link">← Back to Home</a>
+  </header>
+
+  <main class="page-wrap">
+    <div class="test-layout">
+      <div class="test-header">
+        <div class="test-title">SSC CGL Tier-I Demo Test</div>
+        <div class="test-meta">
+          <span class="meta-pill">कुल प्रश्न: <strong>5</strong></span>
+          <span class="meta-pill">कुल समय: <strong>10 मिनट (Demo)</strong></span>
+          <span class="meta-pill">+2 अंक सही • -0.5 गलत</span>
+          <span id="timer" class="meta-pill timer-pill">Time: 10:00</span>
+        </div>
+      </div>
+
+      <div id="question-card" class="question-card">
+        <div class="q-header">
+          Question <span id="q-number">1</span> / <span id="q-total">5</span>
+        </div>
+        <div id="q-text" class="q-text"></div>
+        <ul id="options" class="options-list"></ul>
+      </div>
+
+      <div class="nav-row">
+        <button id="prev-btn" class="btn btn-secondary">Previous</button>
+        <div class="attempt-info" id="attempt-info">Attempted: 0 / 5</div>
+        <button id="next-btn" class="btn btn-primary">Next</button>
+        <button id="submit-btn" class="btn btn-warning">Submit Test</button>
+      </div>
+
+      <!-- AI Explanation: सिर्फ test submit होने के बाद दिखेगा -->
+      <div id="ai-section" class="ai-section">
+        <div class="ai-title-row">
+          <div class="ai-heading">AI Explanation (Demo)</div>
+          <button id="ai-btn" class="btn-outline">इस प्रश्न की व्याख्या देखें</button>
+        </div>
+        <div id="ai-box" class="ai-body">Test submit करने के बाद, यहाँ इस प्रश्न की व्याख्या दिखाई जाएगी।</div>
+      </div>
+
+      <!-- Result Card -->
+      <div id="result-card" class="result-card hidden">
+        <div class="result-title">
+          Test Result
+          <span id="result-badge" class="badge badge-medium">Demo</span>
+        </div>
+
+        <div class="result-grid">
+          <div class="result-item">
+            <div class="result-label">Score</div>
+            <div id="result-score" class="result-value">0 / 0</div>
+          </div>
+          <div class="result-item">
+            <div class="result-label">Percentage</div>
+            <div id="result-percent" class="result-value">0%</div>
+          </div>
+          <div class="result-item">
+            <div class="result-label">Correct</div>
+            <div id="result-correct" class="result-value">0</div>
+          </div>
+          <div class="result-item">
+            <div class="result-label">Wrong</div>
+            <div id="result-wrong" class="result-value">0</div>
+          </div>
+          <div class="result-item">
+            <div class="result-label">Attempted</div>
+            <div id="result-attempted" class="result-value">0</div>
+          </div>
+          <div class="result-item">
+            <div class="result-label">Not Attempted</div>
+            <div id="result-unattempted" class="result-value">0</div>
+          </div>
+        </div>
+
+        <div id="result-message" class="result-message">
+          Demo result message.
+        </div>
+
+        <div class="result-actions">
+          <button id="review-btn" class="btn btn-secondary">Questions दुबारा देखें</button>
+          <button id="restart-btn" class="btn btn-primary">Test फिर से शुरू करें</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    // ===== Demo Questions (तुम बाद में अपने questions से replace कर सकते हो) =====
+    const questions = [
+      {
+        question: "भारत का संविधान कब लागू हुआ?",
+        options: [
+          "26 जनवरी 1950",
+          "15 अगस्त 1947",
+          "26 नवम्बर 1949",
+          "2 अक्टूबर 1950"
+        ],
+        correctIndex: 0,
+        explanation:
+          "संविधान सभा ने संविधान को 26 नवम्बर 1949 को स्वीकार किया, लेकिन इसे 26 जनवरी 1950 को लागू किया गया। इसलिए सही उत्तर 26 जनवरी 1950 है।"
+      },
+      {
+        question: "भारत में योजना आयोग की स्थापना कब हुई थी?",
+        options: [
+          "1950",
+          "1947",
+          "1952",
+          "1962"
+        ],
+        correctIndex: 0,
+        explanation:
+          "योजना आयोग की स्थापना 1950 में की गई थी ताकि देश के आर्थिक विकास के लिए पंचवर्षीय योजनाएँ बनाई जा सकें।"
+      },
+      {
+        question: "GST किस प्रकार का कर है?",
+        options: [
+          "प्रत्यक्ष कर",
+          "अप्रत्यक्ष कर",
+          "दोनों",
+          "इनमें से कोई नहीं"
+        ],
+        correctIndex: 1,
+        explanation:
+          "GST (Goods and Services Tax) एक अप्रत्यक्ष कर है, जो वस्तुओं और सेवाओं की आपूर्ति पर लगाया जाता है।"
+      },
+      {
+        question: "भारतीय संविधान की प्रस्तावना में भारत को किस रूप में वर्णित किया गया है?",
+        options: [
+          "समाजवादी, पंथनिरपेक्ष, लोकतांत्रिक गणराज्य",
+          "समाजवादी, लोकतांत्रिक राजतंत्र",
+          "साम्यवादी, लोकतांत्रिक गणराज्य",
+          "धर्म-राज्य"
+        ],
+        correctIndex: 0,
+        explanation:
+          "प्रस्तावना में भारत को 'सम्पूर्ण प्रभुत्व सम्पन्न, समाजवादी, पंथनिरपेक्ष, लोकतान्त्रिक गणराज्य' कहा गया है।"
+      },
+      {
+        question: "लोकसभा की अधिकतम सदस्य संख्या कितनी हो सकती है?",
+        options: [
+          "452",
+          "500",
+          "552",
+          "562"
+        ],
+        correctIndex: 2,
+        explanation:
+          "संविधान के अनुसार लोकसभा की अधिकतम सदस्य संख्या 552 हो सकती है, जिसमें 530 राज्य, 20 केंद्रशासित प्रदेश और 2 एंग्लो-इंडियन सदस्य (अब समाप्त) थे।"
+      }
+    ];
+
+    // ===== State =====
+    let currentQuestion = 0;
+    const selectedAnswers = new Array(questions.length).fill(null);
+    let isSubmitted = false;
+
+    // Timer (10 मिनट)
+    let remainingSeconds = 10 * 60;
+    let timerInterval = null;
+
+    const qNumberEl = document.getElementById("q-number");
+    const qTotalEl = document.getElementById("q-total");
+    const qTextEl = document.getElementById("q-text");
+    const optionsEl = document.getElementById("options");
+    const attemptInfoEl = document.getElementById("attempt-info");
+    const timerEl = document.getElementById("timer");
+
+    const prevBtn = document.getElementById("prev-btn");
+    const nextBtn = document.getElementById("next-btn");
+    const submitBtn = document.getElementById("submit-btn");
+
+    const aiSection = document.getElementById("ai-section");
+    const aiBtn = document.getElementById("ai-btn");
+    const aiBox = document.getElementById("ai-box");
+
+    const resultCard = document.getElementById("result-card");
+    const resultScore = document.getElementById("result-score");
+    const resultPercent = document.getElementById("result-percent");
+    const resultCorrect = document.getElementById("result-correct");
+    const resultWrong = document.getElementById("result-wrong");
+    const resultAttempted = document.getElementById("result-attempted");
+    const resultUnattempted = document.getElementById("result-unattempted");
+    const resultMessage = document.getElementById("result-message");
+    const resultBadge = document.getElementById("result-badge");
+
+    const reviewBtn = document.getElementById("review-btn");
+    const restartBtn = document.getElementById("restart-btn");
+
+    qTotalEl.textContent = questions.length;
+
+    function formatTime(sec) {
+      const m = Math.floor(sec / 60)
+        .toString()
+        .padStart(2, "0");
+      const s = (sec % 60).toString().padStart(2, "0");
+      return `${m}:${s}`;
+    }
+
+    function startTimer() {
+      timerEl.textContent = "Time: " + formatTime(remainingSeconds);
+      timerInterval = setInterval(() => {
+        remainingSeconds--;
+        if (remainingSeconds <= 0) {
+          clearInterval(timerInterval);
+          remainingSeconds = 0;
+          timerEl.textContent = "Time: 00:00";
+          if (!isSubmitted) {
+            submitTest(true);
+          }
+        } else {
+          timerEl.textContent = "Time: " + formatTime(remainingSeconds);
+        }
+      }, 1000);
+    }
+
+    function renderQuestion() {
+      const q = questions[currentQuestion];
+      qNumberEl.textContent = currentQuestion + 1;
+      qTextEl.textContent = q.question;
+
+      optionsEl.innerHTML = "";
+      q.options.forEach((opt, idx) => {
+        const li = document.createElement("li");
+        const label = document.createElement("label");
+        label.className = "option-label";
+
+        const input = document.createElement("input");
+        input.type = "radio";
+        input.name = "option";
+        input.value = idx;
+
+        if (selectedAnswers[currentQuestion] === idx) {
+          input.checked = true;
+          label.classList.add("option-selected");
+        }
+
+        input.addEventListener("change", () => {
+          selectedAnswers[currentQuestion] = idx;
+          renderQuestion(); // styling refresh
+        });
+
+        const span = document.createElement("span");
+        span.textContent = opt;
+
+        label.appendChild(input);
+        label.appendChild(span);
+        li.appendChild(label);
+        optionsEl.appendChild(li);
+      });
+
+      // Attempt info
+      const attemptedCount = selectedAnswers.filter((v) => v !== null).length;
+      attemptInfoEl.textContent = `Attempted: ${attemptedCount} / ${questions.length}`;
+
+      // Prev/Next disable
+      prevBtn.disabled = currentQuestion === 0;
+      nextBtn.disabled = currentQuestion === questions.length - 1;
+
+      // AI Explanation box reset (हर बार question change पर)
+      if (isSubmitted) {
+        aiBox.textContent = "नीचे दिए गए बटन पर क्लिक करके इस प्रश्न की विस्तृत व्याख्या देखें।";
+      } else {
+        aiBox.textContent =
+          "Test submit करने के बाद, इस प्रश्न की व्याख्या यहाँ दिखाई जाएगी।";
+      }
+    }
+
+    function submitTest(auto = false) {
+      isSubmitted = true;
+
+      // Timer रोक दो
+      if (timerInterval) {
+        clearInterval(timerInterval);
+      }
+
+      // Result calculate
+      let correct = 0;
+      let attempted = 0;
+      selectedAnswers.forEach((ans, idx) => {
+        if (ans !== null) {
+          attempted++;
+          if (ans === questions[idx].correctIndex) correct++;
+        }
+      });
+      const total = questions.length;
+      const wrong = attempted - correct;
+      const unattempted = total - attempted;
+      const percent = Math.round((correct / total) * 100);
+
+      resultScore.textContent = `${correct} / ${total}`;
+      resultPercent.textContent = `${percent}%`;
+      resultCorrect.textContent = correct;
+      resultWrong.textContent = wrong;
+      resultAttempted.textContent = attempted;
+      resultUnattempted.textContent = unattempted;
+
+      let msg = "";
+      let badgeClass = "badge-medium";
+      if (percent >= 80) {
+        msg = "बहुत बढ़िया! आपकी तैयारी काफी मजबूत दिख रही है। इसी तरह mocks देते रहें।";
+        badgeClass = "badge-good";
+      } else if (percent >= 50) {
+        msg =
+          "अच्छी शुरुआत है। कॉन्सेप्ट्स revise करके और mocks देकर आसानी से score बढ़ाया जा सकता है।";
+        badgeClass = "badge-medium";
+      } else {
+        msg =
+          "घबराइए मत – यह सिर्फ demo है। पहले syllabus revise करें, फिर दोबारा से mock देकर improvement track करें।";
+        badgeClass = "badge-bad";
+      }
+      if (auto) {
+        msg += " (समय समाप्त होने पर टेस्ट अपने आप submit हुआ है।)";
+      }
+      resultMessage.textContent = msg;
+
+      // Badge colour set
+      resultBadge.classList.remove("badge-good", "badge-medium", "badge-bad");
+      resultBadge.classList.add(badgeClass);
+
+      // Result card दिखाओ
+      resultCard.classList.remove("hidden");
+
+      // अब से AI Explanation available
+      aiSection.style.display = "block";
+
+      // Submit button disable कर दो ताकि बार-बार क्लिक न हो
+      submitBtn.disabled = true;
+
+      // Current question को refresh कर दो (ताकि AI text भी ठीक से दिखे)
+      renderQuestion();
+    }
+
+    // Buttons events
+    prevBtn.addEventListener("click", () => {
+      if (currentQuestion > 0) {
+        currentQuestion--;
+        renderQuestion();
+      }
+    });
+
+    nextBtn.addEventListener("click", () => {
+      if (currentQuestion < questions.length - 1) {
+        currentQuestion++;
+        renderQuestion();
+      }
+    });
+
+    submitBtn.addEventListener("click", () => {
+      if (isSubmitted) return;
+      const confirmSubmit = confirm(
+        "क्या आप सच में टेस्ट submit करना चाहते हैं? इसके बाद आप सिर्फ questions review कर पाएंगे।"
+      );
+      if (confirmSubmit) {
+        submitTest(false);
+      }
+    });
+
+    aiBtn.addEventListener("click", () => {
+      if (!isSubmitted) {
+        alert("AI Explanation देखने के लिए पहले Test submit करें।");
+        return;
+      }
+      const q = questions[currentQuestion];
+      aiBox.textContent = q.explanation;
+    });
+
+    reviewBtn.addEventListener("click", () => {
+      document
+        .getElementById("question-card")
+        .scrollIntoView({ behavior: "smooth" });
+    });
+
+    restartBtn.addEventListener("click", () => {
+      // State reset
+      for (let i = 0; i < selectedAnswers.length; i++) {
+        selectedAnswers[i] = null;
+      }
+      currentQuestion = 0;
+      isSubmitted = false;
+      remainingSeconds = 10 * 60;
+      submitBtn.disabled = false;
+      resultCard.classList.add("hidden");
+      aiSection.style.display = "none";
+      aiBox.textContent =
+        "Test submit करने के बाद, इस प्रश्न की व्याख्या यहाँ दिखाई जाएगी।";
+      startTimer();
+      renderQuestion();
+    });
+
+    // Initial load
+    startTimer();
+    renderQuestion();
+  </script>
+</body>
+</html>
