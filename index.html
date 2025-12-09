@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SelectBook – Test Series & Video Courses</title>
+
+<style>
+*{box-sizing:border-box;}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f5f6fa;color:#222;}
+a{text-decoration:none;color:#08316f;}
+
+/* NAVBAR */
+.navbar{display:flex;justify-content:space-between;align-items:center;padding:14px 24px;background:#0D47A1;color:#fff;}
+.logo{font-size:22px;font-weight:bold;}
+.nav-links a{margin-left:18px;font-size:14px;color:#dde9ff;}
+.login-btn{
+ background:none;
+ color:#fff;
+ border:2px solid #fff;
+ padding:6px 16px;
+ border-radius:20px;
+ font-size:14px;
+ font-weight:bold;
+}
+
+/* HERO */
+.hero{padding:35px 25px;background:#0D47A1;color:#fff;}
+.hero-inner{max-width:1100px;margin:auto;display:flex;align-items:center;gap:20px;flex-wrap:wrap;}
+.hero-text{flex:1;min-width:230px;}
+.hero-text h1{margin:0 0 12px;font-size:28px;}
+.hero-text p {
+    margin: 0 0 18px;
+    font-size: 15px;
+    color: #ffffff;
+}
+.btn-primary{
+ background:#FFCA28;
+ padding:10px 20px;
+ border-radius:6px;
+ font-size:14px;
+ border:none;
+ font-weight:bold;
+ cursor:pointer;
+}
+
+.hero-founders{display:flex;gap:18px;flex-wrap:wrap;}
+.founder-card{
+ background:rgba(255,255,255,0.18);
+ padding:10px;
+ border-radius:14px;
+ text-align:center;
+ backdrop-filter:blur(3px);
+}
+.founder-card img{
+ width:130px;height:160px;border-radius:10px;
+ border:3px solid #FFCA28;object-fit:cover;
+}
+.founder-name{margin:4px 0 2px;font-size:14px;font-weight:bold;}
+.founder-role{margin:0;font-size:12px;color:#FFE57F;}
+
+/* TOP EXAM UPDATES – SINGLE LINE */
+.news-box{
+ background:#FFF7D1;
+ padding:8px 16px;
+ margin:-18px auto 20px;
+ border-radius:0 0 8px 8px;
+ max-width:1100px;
+ border:1px solid #F3D46D;
+ border-top:none;
+}
+.news-row{display:flex;align-items:center;gap:10px;white-space:nowrap;overflow:hidden;}
+.news-title{
+ font-size:14px;
+ font-weight:bold;
+ color:#c57a00;
+}
+.news-scroll{
+ display:inline-block;
+ animation:scrollNews 14s linear infinite;
+}
+.news-item{margin-right:40px;font-size:14px;color:#333;}
+@keyframes scrollNews{
+ 0%{transform:translateX(100%);}
+ 100%{transform:translateX(-100%);}
+}
+
+/* COMMON LAYOUT */
+.container{max-width:1100px;margin:auto;padding:20px;}
+.section-title{font-size:20px;margin-bottom:12px;}
+
+/* WHY CHOOSE SECTION */
+.why-grid{
+ display:flex;
+ gap:14px;
+ flex-wrap:wrap;
+ margin-bottom:25px;
+}
+.why-card{
+ flex:1;
+ min-width:210px;
+ background:#fff;
+ border-radius:10px;
+ padding:14px;
+ box-shadow:0 2px 6px rgba(0,0,0,0.05);
+}
+.why-card h3{margin:0 0 6px;font-size:15px;color:#0D47A1;}
+.why-card p{margin:0;font-size:13px;color:#444;}
+
+/* TESTS */
+.test-tabs{display:flex;gap:10px;margin-bottom:15px;}
+.tab-btn{
+ padding:7px 18px;
+ border-radius:20px;
+ border:1px solid #0D47A1;
+ background:#fff;
+ color:#0D47A1;
+ font-size:14px;
+ font-weight:bold;
+ cursor:pointer;
+}
+.tab-btn.active{
+ background:#0D47A1;
+ color:#fff;
+}
+.tests-grid{display:flex;flex-direction:column;gap:14px;}
+
+.test-card{
+ background:#fff;
+ padding:15px;
+ border-radius:10px;
+ border-left:4px solid #0D47A1;
+ box-shadow:0 2px 6px rgba(0,0,0,0.04);
+}
+.test-card h3{margin:0 0 6px;font-size:16px;}
+.test-meta{font-size:13px;color:#555;margin-bottom:6px;}
+.test-desc{font-size:13px;margin-bottom:10px;}
+.test-actions{display:flex;gap:8px;flex-wrap:wrap;}
+.btn-outline{
+ padding:8px 14px;
+ border-radius:6px;
+ border:1px solid #0D47A1;
+ background:#fff;
+ color:#0D47A1;
+ font-size:13px;
+ cursor:pointer;
+}
+
+/* VIDEO COURSES SECTION */
+.video-grid{
+ display:flex;
+ flex-wrap:wrap;
+ gap:14px;
+ margin-top:10px;
+ margin-bottom:25px;
+}
+.video-card{
+ flex:1;
+ min-width:260px;
+ background:#ffffff;
+ border-radius:10px;
+ box-shadow:0 2px 6px rgba(0,0,0,0.05);
+ overflow:hidden;
+}
+.video-thumb{
+ height:140px;
+ background:linear-gradient(135deg,#0D47A1,#1976D2);
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ color:#fff;
+ font-size:14px;
+ font-weight:bold;
+}
+.video-body{
+ padding:12px 14px 14px;
+}
+.video-body p{
+ margin:6px 0 10px;
+ font-size:13px;
+ color:#444;
+}
+
+/* CURRENT AFFAIRS – VERTICAL SLIDES */
+.ca-section{
+ margin-top:10px;
+ margin-bottom:10px;
+}
+.ca-title{
+ font-size:18px;
+ margin-bottom:8px;
+}
+.ca-box{
+ background:#ffffff;
+ border-radius:10px;
+ padding:10px;
+ border:1px solid #d0d7ff;
+ height:140px;
+ overflow:hidden;
+ position:relative;
+}
+.ca-inner{
+ position:absolute;
+ width:100%;
+ animation:caScroll 18s linear infinite;
+}
+.ca-item{
+ background:#f3f6ff;
+ border-radius:6px;
+ padding:6px 10px;
+ margin-bottom:6px;
+ font-size:13px;
+ border-left:3px solid #0D47A1;
+}
+.ca-item strong{color:#0D47A1;}
+@keyframes caScroll{
+ 0%{top:0;}
+ 100%{top:-120%;}
+}
+
+/* ABOUT / CONTACT */
+section p{font-size:14px;color:#333;}
+
+/* FOOTER */
+footer{text-align:center;padding:15px;background:#e9e9e9;font-size:13px;margin-top:30px;}
+
+/* RESPONSIVE */
+@media(max-width:700px){
+ .hero-text h1{font-size:22px;}
+ .hero-inner{flex-direction:column;align-items:flex-start;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+ <div class="logo">SelectBook</div>
+ <div class="nav-links">
+  <a href="#home">Home</a>
+  <a href="#tests">Test Series</a>
+  <a href="#videos">Video Courses</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+  <a class="login-btn" href="#">Login / Signup</a>
+ </div>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+ <div class="hero-inner">
+  <div class="hero-text">
+   <h1>Online Preparation – Test Series & Video Courses</h1>
+   <p>Railway, Rajasthan और SSC के लिए Mock Tests + Concept Video Classes • सब कुछ एक ही प्लेटफॉर्म पर।</p>
+   <button class="btn-primary" onclick="document.getElementById('tests').scrollIntoView()">Start Your Preparation</button>
+  </div>
+
+  <div class="hero-founders">
+   <div class="founder-card">
+    <img src="jagdish.jpg" alt="Jagdish Meena">
+    <p class="founder-name">JAGDISH MEENA</p>
+    <p class="founder-role">Founder</p>
+   </div>
+
+   <div class="founder-card">
+    <img src="mahendra.jpg" alt="Mahendra Meena">
+    <p class="founder-name">MAHENDRA MEENA</p>
+    <p class="founder-role">Manager</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- TOP EXAM UPDATES BAR (SINGLE LINE) -->
+<div class="news-box">
+ <div class="news-row">
+  <span class="news-title">Exam Updates:</span>
+  <span class="news-scroll">
+   <span class="news-item">RRB ALP Notification 2026 Expected Soon</span>
+   <span class="news-item">RRB Group D Daily Mock Tests Live on SelectBook</span>
+   <span class="news-item">Rajasthan GK Special Test Series Coming Soon</span>
+  </span>
+ </div>
+</div>
+
+<div class="container">
+
+<!-- WHY CHOOSE SECTION -->
+<section>
+ <h2 class="section-title">Why Choose SelectBook?</h2>
+
+ <div class="why-grid">
+  <div class="why-card">
+   <h3>Category-wise Sections</h3>
+   <p>Railway, Rajasthan और SSC के लिए अलग-अलग structured sections।</p>
+  </div>
+  <div class="why-card">
+   <h3>Simple Layout</h3>
+   <p>Exam Name, Time, Language और Level साफ-साफ लिखा हुआ – mobile पर भी easy view।</p>
+  </div>
+  <div class="why-card">
+   <h3>Test + Video Combo</h3>
+   <p>पहले concept videos से तैयारी, फिर उसी topic पर mock test – exam-oriented practice।</p>
+  </div>
+ </div>
+</section>
+
+<!-- TEST SERIES SECTION -->
+<section id="tests">
+ <h2 class="section-title">Browse Test Series by Category</h2>
+
+ <div class="test-tabs">
+  <button class="tab-btn active" data-target="railway">Railway</button>
+  <button class="tab-btn" data-target="rajasthan">Rajasthan Exams</button>
+ </div>
+ 
+ <!-- Railway Tests (Default Open) -->
+ <div class="tests-grid" data-category="railway">
+  <div class="test-card">
+   <h3>RRB ALP (Assistant Loco Pilot) Test</h3>
+   <div class="test-meta">75 Questions • 60 Minutes • हिन्दी + English</div>
+   <div class="test-desc">ALP Exam के लिए Technical + Non-Technical topics पर आधारित test।</div>
+  <div class="test-actions">
+    <button class="btn-primary" onclick="window.location.href='exam-instructions.html'">
+        Demo Test
+    </button>
+    <button class="btn-outline">Full Test</button>
+    <button class="btn-outline">Sectional Test</button>
+    <button class="btn-outline">Previous Year Test</button>
+</div>
+  </div>
+
+  <div class="test-card">
+   <h3>RRB Technician Test</h3>
+   <div class="test-meta">100 Questions • 90 Minutes • हिन्दी + English</div>
+   <div class="test-desc">Electrical, Mechanical और Electronics concepts पर आधारित Technician test series।</div>
+   <div class="test-actions">
+    <button class="btn-primary">Demo Test</button>
+    <button class="btn-outline">Full Test</button>
+    <button class="btn-outline">Sectional Test</button>
+    <button class="btn-outline">Previous Year Test</button>
+   </div>
+  </div>
+
+  <div class="test-card">
+   <h3>RRB NTPC (Under Graduate) Test</h3>
+   <div class="test-meta">100 Questions • 90 Minutes • हिन्दी + English</div>
+   <div class="test-desc">12th level posts के लिए Maths, Reasoning, GK पर आधारित UG mock tests।</div>
+   <div class="test-actions">
+    <button class="btn-primary">Demo Test</button>
+    <button class="btn-outline">Full Test</button>
+    <button class="btn-outline">Sectional Test</button>
+    <button class="btn-outline">Previous Year Test</button>
+   </div>
+  </div>
+
+  <div class="test-card">
+   <h3>RRB NTPC (Graduate) Test</h3>
+   <div class="test-meta">120 Questions • 90 Minutes • हिन्दी + English</div>
+   <div class="test-desc">Graduate level posts के लिए Station Master, Guard आदि के लिए mock tests।</div>
+   <div class="test-actions">
+    <button class="btn-primary">Demo Test</button>
+    <button class="btn-outline">Full Test</button>
+    <button class="btn-outline">Sectional Test</button>
+    <button class="btn-outline">Previous Year Test</button>
+   </div>
+  </div>
+
+  <div class="test-card">
+   <h3>RRB Group D Mock Test</h3>
+   <div class="test-meta">100 Questions • 90 Minutes • हिन्दी + English</div>
+   <div class="test-desc">Group D Exam pattern पर आधारित Reasoning, GK और Science का mix।</div>
+   <div class="test-actions">
+    <button class="btn-primary">Demo Test</button>
+    <button class="btn-outline">Full Test</button>
+    <button class="btn-outline">Sectional Test</button>
+    <button class="btn-outline">Previous Year Test</button>
+   </div>
+  </div>
+ </div>
+
+ <!-- Rajasthan Tests -->
+ <div class="tests-grid" data-category="rajasthan" style="display:none;">
+  <div class="test-card">
+   <h3>Rajasthan Police Constable Test</h3>
+   <div class="test-meta">150 Questions • 120 Minutes • हिन्दी</div>
+   <div class="test-desc">राजस्थान पुलिस Constable Exam के लिए पूरी syllabus cover करने वाले mock tests।</div>
+   <div class="test-actions">
+    <button class="btn-primary">Demo Test</button>
+    <button class="btn-outline">Full Test</button>
+    <button class="btn-outline">Sectional Test</button>
+    <button class="btn-outline">Previous Year Test</button>
+   </div>
+  </div>
+
+  <div class="test-card">
+   <h3>Rajasthan GK Special Test</h3>
+   <div class="test-meta">100 Questions • 90 Minutes • हिन्दी</div>
+   <div class="test-desc">राज्य की History, Art & Culture, Geography, Current GK पर Focused series।</div>
+   <div class="test-actions">
+    <button class="btn-primary">Demo Test</button>
+    <button class="btn-outline">Full Test</button>
+    <button class="btn-outline">Sectional Test</button>
+    <button class="btn-outline">Previous Year Test</button>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- VIDEO COURSES SECTION -->
+<section id="videos">
+ <h2 class="section-title">Video Courses & Concept Lectures</h2>
+ <p class="section-sub">यहाँ से छात्र सीधे topic-wise वीडियो देख सकेंगे और फिर ऊपर दी गई test series से अपनी तैयारी को check कर पाएंगे।</p>
+
+ <div class="video-grid">
+
+  <!-- Railway Video Course -->
+  <div class="video-card">
+   <div class="video-thumb">
+    Railway Complete Course
+   </div>
+   <div class="video-body">
+    <h3 style="margin:0;font-size:16px;color:#0D47A1;">Railway Complete Course</h3>
+    <p>RRB ALP, Technician, NTPC और Group D के लिए full syllabus video lectures + PYQ discussion + practice sets।</p>
+    <div class="test-actions">
+     <button class="btn-primary">Watch Railway Videos</button>
+     <button class="btn-outline">View Course Details</button>
+    </div>
+   </div>
+  </div>
+
+  <!-- Rajasthan Video Course -->
+  <div class="video-card">
+   <div class="video-thumb" style="background:linear-gradient(135deg,#1565C0,#2E7D32);">
+    Rajasthan Target Batch
+   </div>
+   <div class="video-body">
+    <h3 style="margin:0;font-size:16px;color:#0D47A1;">Rajasthan Target Batch</h3>
+    <p>Rajasthan Police, Patwari, VDO, Sub Inspector, Jail Prahari, Forest Guard के लिए theory + MCQ discussion classes।</p>
+    <div class="test-actions">
+     <button class="btn-primary">Watch Rajasthan Videos</button>
+     <button class="btn-outline">View Course Details</button>
+    </div>
+   </div>
+  </div>
+
+  <!-- SSC Video Course -->
+  <div class="video-card">
+   <div class="video-thumb" style="background:linear-gradient(135deg,#1E88E5,#8E24AA);">
+    SSC Smart Course
+   </div>
+   <div class="video-body">
+    <h3 style="margin:0;font-size:16px;color:#0D47A1;">SSC Smart Course</h3>
+    <p>SSC CGL, CHSL, MTS, Delhi Police, SSC JE के लिए Maths tricks, Reasoning shortcuts, English और GS के high-yield topics।</p>
+    <div class="test-actions">
+     <button class="btn-primary">Watch SSC Videos</button>
+     <button class="btn-outline">View Course Details</button>
+    </div>
+   </div>
+  </div>
+
+ </div>
+</section>
+
+<!-- CURRENT AFFAIRS VERTICAL NEWS -->
+<section class="ca-section">
+ <h2 class="ca-title">Current Affairs – Important News</h2>
+ <div class="ca-box">
+  <div class="ca-inner">
+   <div class="ca-item">
+    <strong>Daily CA Quiz:</strong> Today’s 10 MCQ quiz for all Railway exams – Try now!
+   </div>
+   <div class="ca-item">
+    <strong>Budget Special:</strong> Union Budget 2026 expected – special mock tests coming soon.
+   </div>
+   <div class="ca-item">
+    <strong>Rajasthan Updates:</strong> RPSC द्वारा नई भर्ती की सूचना – official notification का wait करें।
+   </div>
+   <div class="ca-item">
+    <strong>Exam Strategy Session:</strong> Free YouTube live session on Railway preparation this Sunday।
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+ <h2 class="section-title">About SelectBook</h2>
+ <p>SelectBook का लक्ष्य है कि छात्रों को Railway, Rajasthan और SSC प्रतियोगी परीक्षाओं के लिए category-wise structured Test Series और साथ में Video Courses मिल सकें, ताकि self-study करते हुए भी exam-level practice और concept clarity दोनों मिल पाए।</p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+ <h2 class="section-title">Contact Us</h2>
+ <p>WhatsApp: Chat (Coming Soon)</p>
+ <p>Email: selectbook@example.com</p>
+</section>
+
+</div>
+
+<footer>
+ © 2025 SelectBook – Test Series & Video Courses Platform
+</footer>
+
+<script>
+const tabs=document.querySelectorAll(".tab-btn");
+const sections=document.querySelectorAll("[data-category]");
+
+tabs.forEach(tab=>{
+ tab.addEventListener("click",()=>{
+  tabs.forEach(t=>t.classList.remove("active"));
+  tab.classList.add("active");
+  const trg=tab.dataset.target;
+  sections.forEach(sec=>{
+   sec.style.display = (sec.dataset.category===trg) ? "block" : "none";
+  });
+ });
+});
+</script>
+
+</body>
+</html>
