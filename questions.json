@@ -1,729 +1,732 @@
 {
-  "testId": "SMD_PWAY_1_100",
-  "subject": "Track Machine / Permanent Way",
-  "language": "English",
-  "time": 100,
+  "testId": "TRACK_MACHINE_TEST_100",
+  "subject": "Track Machine / Railway Technical",
+  "language": "English & Hindi",
+  "time": 120,
   "questions": [
     {
       "id": 1,
-      "text": "Lining systems are used on which machines?",
-      "options": ["CSM only", "UNO & DUO only", "All tamping machines", "All track machines"],
+      "text": "Versine compensation value (Vm) is fed in.........",
+      "options": ["3 point lining only", "4 point lining only", "3 & 4 point lining", "None of these"],
       "answer": 2,
       "marks": 1
     },
     {
       "id": 2,
-      "text": "Versine formula for CSM in three point lining method is?",
-      "options": ["H = 25000/R", "H = 20367/R", "H = 15000/R", "H = 30000/R"],
-      "answer": 1,
+      "text": "During survey by chord system, the lining errors are to be determined by measuring offsets at every........ intervals on........chord on straight track.",
+      "options": ["10m and 20m", "5m and 20m", "5m and 40m", "5m and 10m"],
+      "answer": 2,
       "marks": 1
     },
     {
       "id": 3,
-      "text": "Direction of cant selector switch in Plasser tampers should be kept?",
-      "options": ["Same side", "Opposite to base rail", "Either side", "Neutral"],
-      "answer": 1,
+      "text": "Which instrument is used as a standard for precision length measurement in engineering metrology?",
+      "options": ["Vernier caliper", "Micrometer", "Steel roll", "Slip gauge"],
+      "answer": 3,
       "marks": 1
     },
     {
       "id": 4,
-      "text": "Versine ratio in four point lining method for CSM is?",
-      "options": ["1.33", "1.507", "1.2157", "1.6221"],
+      "text": "More than one tool mounted in a......",
+      "options": ["Shaper", "Planner", "Both", "None"],
       "answer": 1,
       "marks": 1
     },
     {
       "id": 5,
-      "text": "Laser lining in 3-point mode is mainly used to remove?",
-      "options": ["Short misalignment", "Long misalignment", "Twist", "Cant"],
+      "text": "What is the ratio of iron oxide to aluminium powder in thermal welding?",
+      "options": ["1:3", "3:1", "4:1", "1:4"],
       "answer": 1,
       "marks": 1
     },
-
     {
       "id": 6,
-      "text": "Instrument used to measure very high temperature without contact is?",
-      "options": ["RTD", "Thermocouple", "Pyrometer", "Bimetallic thermometer"],
-      "answer": 2,
+      "text": "Number of powered axles in RIV machine is.....",
+      "options": ["1", "2", "3", "4"],
+      "answer": 0,
       "marks": 1
     },
     {
       "id": 7,
-      "text": "Versine of curved track depends upon?",
-      "options": ["Radius only", "Chord length only", "Measurement method", "All of these"],
-      "answer": 3,
+      "text": "Full form of PLC?",
+      "options": ["Programmable Logic Controller", "Pulse Level Controller", "Position Logic Clear", "None"],
+      "answer": 0,
       "marks": 1
     },
     {
       "id": 8,
-      "text": "Slew potentiometer converts slew into electrical signal at rate of?",
-      "options": ["10 mm/mm", "25 mm/mm", "50 mm/mm", "5 mm/mm"],
-      "answer": 2,
+      "text": "Find odd man out",
+      "options": ["CSM", "TEX", "DTE", "DUO"],
+      "answer": 3,
       "marks": 1
     },
     {
       "id": 9,
-      "text": "Rear pendulum output in CSM serves how many functions?",
-      "options": ["One", "Two", "Three", "Four"],
-      "answer": 2,
+      "text": "For good quality of grinding with RGM recommended GQI is",
+      "options": ["More than 70", "More than 80", "More than 90", "More than 58"],
+      "answer": 1,
       "marks": 1
     },
     {
       "id": 10,
-      "text": "Number of trolleys used in 3-point lining method is?",
-      "options": ["One", "Two", "Three", "Four"],
-      "answer": 1,
+      "text": "Who can be applied to lift the rail on",
+      "options": ["Rail head only", "Rail foot only", "Both", "None"],
+      "answer": 2,
       "marks": 1
     },
 
     {
       "id": 11,
-      "text": "Machines equipped with Automatic Lining Computer (ALC) are?",
-      "options": ["UNO", "DUO", "Tamping Express", "All"],
-      "answer": 2,
-      "marks": 1
-    },
-    {
-      "id": 12,
-      "text": "Front pendulum in tamping machine is used for?",
-      "options": ["Versine", "Cross level", "Longitudinal level", "Gauge"],
+      "text": "Cummins engine model provided in MPT machine.",
+      "options": ["QSN14L", "QSM14L", "QST14L", "QSM12L"],
       "answer": 0,
       "marks": 1
     },
     {
-      "id": 13,
-      "text": "Residual error in four point lining method in design mode is?",
-      "options": ["H", "H/2", "Zero", "Fd/n"],
-      "answer": 1,
+      "id": 12,
+      "text": "IRICEN stands for",
+      "options": [
+        "Indian Railway Institute of Civil Engineering",
+        "International Railway Institute of Civil Engineering",
+        "Indian Railway Institute of Construction Engineering",
+        "None"
+      ],
+      "answer": 0,
       "marks": 1
     },
+
+    {
+      "id": 13,
+      "text": "How many suction hoses fitted to both main gear boxes of BCM model RM80-92U?",
+      "options": ["9", "8", "17", "27"],
+      "answer": 3,
+      "marks": 1
+    },
+
     {
       "id": 14,
-      "text": "In smoothing mode, longitudinal and cross level are corrected?",
-      "options": ["Completely", "Partially", "Not corrected", "Random"],
-      "answer": 1,
+      "text": "Mechanical power transmission from engine to axle gearbox in tamping machine takes place by",
+      "options": ["Gearbox & cardan shafts", "V belt", "Chains", "Pulleys"],
+      "answer": 0,
       "marks": 1
     },
+
     {
       "id": 15,
-      "text": "Constant versine ratio is valid for which type of curve?",
-      "options": ["Spiral", "Parabolic", "Circular", "Variable"],
-      "answer": 2,
+      "text": "The flow of hydraulic pump provided inside ZF gearbox is checked through",
+      "options": ["Flow meter", "Lactometer", "Hydrometer", "None"],
+      "answer": 0,
       "marks": 1
     },
 
     {
       "id": 16,
-      "text": "Gauge made of thin leaves marked with thickness is?",
-      "options": ["Radius gauge", "Plug gauge", "Feeler gauge", "Ring gauge"],
-      "answer": 2,
-      "marks": 1
-    },
-    {
-      "id": 17,
-      "text": "Radius of straight track is considered as?",
-      "options": ["Zero", "Infinite", "Constant", "Variable"],
-      "answer": 1,
-      "marks": 1
-    },
-    {
-      "id": 18,
-      "text": "Residual error ratio in lifting for UNO/DUO is?",
-      "options": ["1.33", "1.507", "2.775", "3.326"],
+      "text": "Pressure cut off switch of ZF gear box is operated at",
+      "options": ["2.5 bar", "3.5 bar", "4 bar", "None"],
       "answer": 0,
       "marks": 1
     },
+
     {
-      "id": 19,
-      "text": "Slip gauges are mainly used for?",
-      "options": ["Pressure measurement", "Calibration", "Surface finish", "Gap measurement"],
-      "answer": 1,
+      "id": 17,
+      "text": "How many arms of one tamping bank of DTE machine?",
+      "options": ["6", "2", "8", "4"],
+      "answer": 0,
       "marks": 1
     },
+
+    {
+      "id": 18,
+      "text": "Bank of guide column of CSM machine is",
+      "options": ["1290 mm", "1240 mm", "1410 mm", "1365 mm"],
+      "answer": 0,
+      "marks": 1
+    },
+
+    {
+      "id": 19,
+      "text": "What is the type of engine provided on old FRM machine?",
+      "options": ["Cummins", "Deutz", "MEM", "CAT"],
+      "answer": 0,
+      "marks": 1
+    },
+
     {
       "id": 20,
-      "text": "Least count of standard micrometer is?",
-      "options": ["0.1 mm", "0.05 mm", "0.02 mm", "0.01 mm"],
-      "answer": 3,
+      "text": "On BCM cutter chain rotates",
+      "options": ["On gear wheel", "On belts", "All sprockets", "None"],
+      "answer": 2,
       "marks": 1
     },
 
     {
       "id": 21,
-      "text": "Smoothing mode can be used in which lining method?",
-      "options": ["4-point", "3-point", "Both", "None"],
-      "answer": 1,
+      "text": "Amount of gear oil used in main gear box on BCM is",
+      "options": ["20 litre", "100 litre", "45 litre", "None"],
+      "answer": 0,
       "marks": 1
     },
+
     {
       "id": 22,
-      "text": "Design mode can be used in which lining method?",
-      "options": ["3-point", "4-point", "Both", "None"],
-      "answer": 1,
+      "text": "In DTS the natural frequency of bridges with span over 10m lies below",
+      "options": ["20 Hz", "25 Hz", "30 Hz", "32 Hz"],
+      "answer": 2,
       "marks": 1
     },
+
     {
       "id": 23,
-      "text": "Versine compensation value depends on?",
-      "options": ["Radius", "Transition length", "Speed", "Radius & transition length"],
-      "answer": 3,
-      "marks": 1
-    },
-    {
-      "id": 24,
-      "text": "Vm toggle switch direction when entering lower radius curve is?",
-      "options": ["Outer side", "Inner side", "Neutral", "Any side"],
+      "text": "For BRM machine block granted for 150 minutes, ineffective time is",
+      "options": ["15 min", "20 min", "30 min", "45 min"],
       "answer": 1,
       "marks": 1
     },
+
+    {
+      "id": 24,
+      "text": "IOH of machine is done at ...... hours of engine running",
+      "options": ["1000 hrs", "2000 hrs", "4000 hrs", "6000 hrs"],
+      "answer": 1,
+      "marks": 1
+    },
+
     {
       "id": 25,
-      "text": "Constant used for versine compensation value for CSM is?",
-      "options": ["8400", "8325", "8500", "9000"],
+      "text": "Voltmeter is used in circuit to measure voltage in",
+      "options": ["Series", "Parallel", "Both", "Either A or B"],
       "answer": 1,
       "marks": 1
     },
 
     {
       "id": 26,
-      "text": "Residual error in four point lining is approximately?",
-      "options": ["Equal to 3-point", "Double", "Half of 3-point", "Zero"],
-      "answer": 2,
+      "text": "Potentiometer is variable",
+      "options": ["Resistor", "Inductor", "Capacitor", "None"],
+      "answer": 0,
       "marks": 1
     },
+
     {
       "id": 27,
-      "text": "Versine in 3-point lining method is measured at which point?",
-      "options": ["A", "B", "C", "D"],
+      "text": "Ohm's law is not applicable to",
+      "options": ["DC circuit", "AC circuit", "Semiconductor", "None"],
       "answer": 2,
       "marks": 1
     },
+
     {
       "id": 28,
-      "text": "Lining system trolleys are pressed against which rail?",
-      "options": ["Inner rail", "Outer rail", "Both rails", "Base rail"],
-      "answer": 1,
+      "text": "Current is measured by",
+      "options": ["Ammeter", "Voltmeter", "Energy meter", "Ohmmeter"],
+      "answer": 0,
       "marks": 1
     },
+
     {
       "id": 29,
-      "text": "Error reduction ratio in 3-point lining method is?",
-      "options": ["BC/BD", "BD/BC", "AB/CD", "AD/BC"],
-      "answer": 0,
+      "text": "What is the unit of capacitance?",
+      "options": ["Ohm", "Henry", "Joule", "Farad"],
+      "answer": 3,
       "marks": 1
     },
+
     {
       "id": 30,
-      "text": "Residual error value in 3-point lining for CSM is?",
-      "options": ["1.33", "1.91", "2.91", "3.13"],
+      "text": "Which capacitor is largely used?",
+      "options": ["Mica", "Ceramic", "Air", "Electrolyte"],
       "answer": 1,
-      "marks": 1
-    },
-
-    {
-      "id": 31,
-      "text": "Versine of straight track is?",
-      "options": ["Maximum", "Minimum", "Zero", "Infinite"],
-      "answer": 2,
-      "marks": 1
-    },
-    {
-      "id": 32,
-      "text": "General lift ramp provided in tamping machine is?",
-      "options": ["1 in 200", "1 in 1000", "1 in 150", "1 in 500"],
-      "answer": 1,
-      "marks": 1
-    },
-    {
-      "id": 33,
-      "text": "In ALC measuring mode, track can be measured in?",
-      "options": ["Forward", "Reverse", "Both", "None"],
-      "answer": 2,
-      "marks": 1
-    },
-    {
-      "id": 34,
-      "text": "Long wave defects become significant with?",
-      "options": ["Decrease in speed", "Increase in speed", "Decrease in load", "Temperature drop"],
-      "answer": 1,
-      "marks": 1
-    },
-    {
-      "id": 35,
-      "text": "In ALC working, lining system is set to?",
-      "options": ["4-point", "3-point", "Manual", "Design"],
-      "answer": 1,
-      "marks": 1
-    },
-
-    {
-      "id": 36,
-      "text": "Slew potentiometer is provided on which panel?",
-      "options": ["B1", "B2", "B3", "B4"],
-      "answer": 3,
-      "marks": 1
-    },
-    {
-      "id": 37,
-      "text": "Levelling error is corrected in how many modes?",
-      "options": ["One", "Two", "Three", "Four"],
-      "answer": 3,
-      "marks": 1
-    },
-    {
-      "id": 38,
-      "text": "General lift in smoothing mode is?",
-      "options": ["Fixed", "Variable", "Zero", "Maximum"],
-      "answer": 1,
-      "marks": 1
-    },
-    {
-      "id": 39,
-      "text": "Design mode removes which defect?",
-      "options": ["Short wave", "Long wave", "Twist", "Cant"],
-      "answer": 1,
-      "marks": 1
-    },
-    {
-      "id": 40,
-      "text": "General lift should always be ___ than high point.",
-      "options": ["Less", "More", "Equal", "Zero"],
-      "answer": 1,
-      "marks": 1
-    },
-
-    {
-      "id": 41,
-      "text": "Normal general lift for single insertion in PSC sleeper is?",
-      "options": ["10 mm", "20 mm", "30 mm", "40 mm"],
-      "answer": 1,
-      "marks": 1
-    },
-    {
-      "id": 42,
-      "text": "Maximum general lift for double insertion should not exceed?",
-      "options": ["20 mm", "25 mm", "30 mm", "40 mm"],
-      "answer": 2,
-      "marks": 1
-    },
-    {
-      "id": 43,
-      "text": "Number of height transducers in levelling system is?",
-      "options": ["One", "Two", "Three", "Four"],
-      "answer": 1,
-      "marks": 1
-    },
-    {
-      "id": 44,
-      "text": "Longitudinal levels are measured by?",
-      "options": ["Pendulum", "Height transducer", "Cant potentiometer", "Gauge meter"],
-      "answer": 0,
-      "marks": 1
-    },
-    {
-      "id": 45,
-      "text": "Middle pendulum is used for?",
-      "options": ["Cross level indication", "Longitudinal level", "Cant", "Gauge"],
-      "answer": 0,
-      "marks": 1
-    },
-
-    {
-      "id": 46,
-      "text": "Cross level recording is done by?",
-      "options": ["Front pendulum", "Middle pendulum", "Rear pendulum", "Height transducer"],
-      "answer": 1,
-      "marks": 1
-    },
-    {
-      "id": 47,
-      "text": "Super elevation potentiometer is provided in?",
-      "options": ["Front cabin", "Rear cabin", "Both cabins", "None"],
-      "answer": 2,
-      "marks": 1
-    },
-    {
-      "id": 48,
-      "text": "Correction value formula for super elevation is?",
-      "options": ["K × 100 × SE / R", "SE / R", "K × SE", "K × 50"],
-      "answer": 0,
-      "marks": 1
-    },
-    {
-      "id": 49,
-      "text": "Primary use of feeler gauge is to?",
-      "options": ["Measure radius", "Check pitch", "Measure gap", "Check taper"],
-      "answer": 2,
-      "marks": 1
-    },
-    {
-      "id": 50,
-      "text": "Function of ratchet stop in micrometer is to?",
-      "options": ["Lock spindle", "Uniform pressure", "Increase speed", "Reduce wear"],
-      "answer": 1,
-      "marks": 1
-    },
-
-    {
-      "id": 51,
-      "text": "Slip gauges are also known as?",
-      "options": ["Plug gauges", "Gauge blocks", "Snap gauges", "Feeler gauges"],
-      "answer": 1,
-      "marks": 1
-    },
-    {
-      "id": 52,
-      "text": "Joining of slip gauges is called?",
-      "options": ["Sliding", "Wringing", "Locking", "Fitting"],
-      "answer": 1,
-      "marks": 1
-    },
-    {
-      "id": 53,
-      "text": "Bourdon tube gauge measures?",
-      "options": ["Temperature", "Pressure", "Speed", "Flow"],
-      "answer": 1,
-      "marks": 1
-    },
-    {
-      "id": 54,
-      "text": "Shape of Bourdon tube is?",
-      "options": ["Straight", "C-shaped", "U-shaped", "Bellows"],
-      "answer": 1,
-      "marks": 1
-    },
-    {
-      "id": 55,
-      "text": "Hydraulic system works on which law?",
-      "options": ["Newton", "Bernoulli", "Pascal", "Ohm"],
-      "answer": 2,
-      "marks": 1
-    },
-
-    {
-      "id": 56,
-      "text": "Hydraulic oil is used for?",
-      "options": ["Cooling", "Lubrication", "Power transmission", "All of these"],
-      "answer": 3,
-      "marks": 1
-    },
-    {
-      "id": 57,
-      "text": "Main function of hydraulic filter is?",
-      "options": ["Increase pressure", "Remove impurities", "Reduce temperature", "Control flow"],
-      "answer": 1,
-      "marks": 1
-    },
-    {
-      "id": 58,
-      "text": "Accumulator in hydraulic system is used to?",
-      "options": ["Store energy", "Increase flow", "Reduce leakage", "Filter oil"],
-      "answer": 0,
-      "marks": 1
-    },
-    {
-      "id": 59,
-      "text": "Pump converts mechanical energy into?",
-      "options": ["Thermal", "Electrical", "Hydraulic", "Potential"],
-      "answer": 2,
-      "marks": 1
-    },
-    {
-      "id": 60,
-      "text": "Actuator converts hydraulic energy into?",
-      "options": ["Mechanical", "Thermal", "Electrical", "Chemical"],
-      "answer": 0,
-      "marks": 1
-    },
-
-    {
-      "id": 61,
-      "text": "Control valve controls?",
-      "options": ["Pressure", "Flow", "Direction", "All of these"],
-      "answer": 3,
-      "marks": 1
-    },
-    {
-      "id": 62,
-      "text": "Relief valve is used to?",
-      "options": ["Increase pressure", "Limit pressure", "Control flow", "Change direction"],
-      "answer": 1,
-      "marks": 1
-    },
-    {
-      "id": 63,
-      "text": "Hydraulic cylinder in tamping machine is generally?",
-      "options": ["Single acting", "Double acting", "Rotary", "Telescopic"],
-      "answer": 1,
-      "marks": 1
-    },
-    {
-      "id": 64,
-      "text": "Purpose of seal in hydraulic system is?",
-      "options": ["Increase pressure", "Prevent leakage", "Increase speed", "Reduce noise"],
-      "answer": 1,
-      "marks": 1
-    },
-    {
-      "id": 65,
-      "text": "Hydraulic hoses should be protected from?",
-      "options": ["Heat", "Abrasion", "Pressure surge", "All of these"],
-      "answer": 3,
-      "marks": 1
-    },
-
-    {
-      "id": 66,
-      "text": "Preventive maintenance of hydraulic system helps to?",
-      "options": ["Reduce failures", "Increase efficiency", "Increase life", "All of these"],
-      "answer": 3,
-      "marks": 1
-    },
-    {
-      "id": 67,
-      "text": "Instrument used to measure electric current is?",
-      "options": ["Voltmeter", "Ammeter", "Ohmmeter", "Galvanometer"],
-      "answer": 1,
-      "marks": 1
-    },
-    {
-      "id": 68,
-      "text": "Least count of micrometer having 0.5 mm pitch & 50 divisions is?",
-      "options": ["0.02 mm", "0.01 mm", "0.05 mm", "0.1 mm"],
-      "answer": 1,
-      "marks": 1
-    },
-    {
-      "id": 69,
-      "text": "Gauge used to check pitch of screw threads is?",
-      "options": ["Feeler gauge", "Radius gauge", "Screw pitch gauge", "Plug gauge"],
-      "answer": 2,
-      "marks": 1
-    },
-    {
-      "id": 70,
-      "text": "Gauge used to check outer diameter of shaft is?",
-      "options": ["Plug gauge", "Ring gauge", "Feeler gauge", "Bore gauge"],
-      "answer": 1,
-      "marks": 1
-    },
-
-    {
-      "id": 71,
-      "text": "What is the standard gauge for Broad Gauge on Indian Railways?",
-      "options": ["1435 mm", "1520 mm", "1676 mm", "1000 mm"],
-      "answer": 2,
-      "marks": 1
-    },
-    {
-      "id": 72,
-      "text": "What is the primary objective of track maintenance?",
-      "options": ["Increase speed", "Reduce cost", "Restore best possible condition", "None of the above"],
-      "answer": 2,
-      "marks": 1
-    },
-    {
-      "id": 73,
-      "text": "Track recording car measures which rail geometry parameter except?",
-      "options": ["Gauge", "Unevenness", "Alignment", "Twist"],
-      "answer": 3,
-      "marks": 1
-    },
-    {
-      "id": 74,
-      "text": "What material is predominantly used for sleepers on Indian Railways?",
-      "options": ["Steel", "Cast Iron", "Concrete", "Wood"],
-      "answer": 2,
-      "marks": 1
-    },
-    {
-      "id": 75,
-      "text": "What is the term 'TQI' short for?",
-      "options": ["Track Quality Index", "Track Quality Inspection", "Track Queuing Identification", "Track Observation Index"],
-      "answer": 0,
-      "marks": 1
-    },
-
-    {
-      "id": 76,
-      "text": "Which equipment is used for measuring vertical and lateral accelerations in OMS?",
-      "options": ["Accelerometers", "Theodolites", "Barometers", "GPS"],
-      "answer": 0,
-      "marks": 1
-    },
-    {
-      "id": 77,
-      "text": "Which maintenance limit necessitates speed reduction?",
-      "options": ["Planned Maintenance Limit", "Need Based Maintenance Limit", "Urgent Maintenance Limit", "Routine Limit"],
-      "answer": 2,
-      "marks": 1
-    },
-    {
-      "id": 78,
-      "text": "For track recording, what is the minimum speed required above which readings are valid?",
-      "options": ["10 kmph", "25 kmph", "40 kmph", "20 kmph"],
-      "answer": 1,
-      "marks": 1
-    },
-    {
-      "id": 79,
-      "text": "Which joint is installed at the ends of LWR/CWR for expansion?",
-      "options": ["Fish plate joint", "Butt joint", "Switch Expansion Joint", "Welded joint"],
-      "answer": 2,
-      "marks": 1
-    },
-    {
-      "id": 80,
-      "text": "Which aspect of track geometry does 'alignment' refer to?",
-      "options": ["Vertical deviation", "Horizontal deviation", "Track width", "Rail temperature"],
-      "answer": 1,
-      "marks": 1
-    },
-
-    {
-      "id": 81,
-      "text": "Which instrument is used to measure gauge?",
-      "options": ["Vernier caliper", "Gauge meter", "Barometer", "Accelerometer"],
-      "answer": 1,
-      "marks": 1
-    },
-    {
-      "id": 82,
-      "text": "What is 'super-elevation' with respect to track?",
-      "options": ["Amount of ballast depth", "Height of rail head above sleeper", "Height by which outer rail is raised above inner rail on a curve", "Distance between rails"],
-      "answer": 2,
-      "marks": 1
-    },
-    {
-      "id": 83,
-      "text": "What is the primary function of ballast?",
-      "options": ["Speed regulation", "Drainage", "Provide track stability and load distribution", "Sound insulation"],
-      "answer": 2,
-      "marks": 1
-    },
-    {
-      "id": 84,
-      "text": "Which of the following is a common defect in rails?",
-      "options": ["Buckling", "Splitting", "Corrugation", "Bridging"],
-      "answer": 2,
-      "marks": 1
-    },
-    {
-      "id": 85,
-      "text": "What type of rail joint is preferred to minimize noise and shock?",
-      "options": ["Fishplate joint", "Welded joint", "Chair joint", "Butt joint"],
-      "answer": 1,
-      "marks": 1
-    },
-
-    {
-      "id": 86,
-      "text": "What does 'TRC' stand for in track monitoring?",
-      "options": ["Track Repair Crew", "Track Recording Car", "Track Rail Controller", "Track Remote Check"],
-      "answer": 1,
-      "marks": 1
-    },
-    {
-      "id": 87,
-      "text": "What is the usual depth of ballast under sleepers?",
-      "options": ["150 mm", "250–300 mm", "400 mm", "500 mm"],
-      "answer": 1,
-      "marks": 1
-    },
-    {
-      "id": 88,
-      "text": "What is the usual sleeper spacing for BG mainline track?",
-      "options": ["500 mm", "600 mm", "650–700 mm", "800 mm"],
-      "answer": 2,
-      "marks": 1
-    },
-    {
-      "id": 89,
-      "text": "Which of the following is NOT a track irregularity?",
-      "options": ["Gauge variation", "Alignment defect", "Rail breakage", "Longitudinal level fault"],
-      "answer": 2,
-      "marks": 1
-    },
-    {
-      "id": 90,
-      "text": "What is the main cause of rail temperature variation?",
-      "options": ["Weather changes", "Ambient temperature and sunlight", "Ballast insulation", "Rail type"],
-      "answer": 1,
-      "marks": 1
-    },
-
-    {
-      "id": 91,
-      "text": "What is the maximum permissible cant deficiency on curved track?",
-      "options": ["50 mm", "60 mm", "75 mm", "90 mm"],
-      "answer": 2,
-      "marks": 1
-    },
-    {
-      "id": 92,
-      "text": "What is the normal length of a rail used in BG track?",
-      "options": ["10 m", "13 m", "18 m", "25 m"],
-      "answer": 1,
-      "marks": 1
-    },
-    {
-      "id": 93,
-      "text": "Which type of sleeper provides the best electrical insulation?",
-      "options": ["Wooden", "Concrete", "Plastic composite", "Steel"],
-      "answer": 2,
-      "marks": 1
-    },
-    {
-      "id": 94,
-      "text": "Which of the following causes track buckling?",
-      "options": ["Poor ballast", "Gauge widening", "Thermal expansion of rails", "Worn sleepers"],
-      "answer": 2,
-      "marks": 1
-    },
-    {
-      "id": 95,
-      "text": "What is 'Shedding' in track maintenance?",
-      "options": ["Removing damaged rails", "Removing rust from railhead", "Ballast cleaning", "Fixing sleepers"],
-      "answer": 1,
-      "marks": 1
-    },
-
-    {
-      "id": 96,
-      "text": "What does 'P-Way' stand for?",
-      "options": ["Permanent Waterway", "Project Way", "Permanent Way", "Passage Way"],
-      "answer": 2,
-      "marks": 1
-    },
-    {
-      "id": 97,
-      "text": "Which type of rail wear is common on curves?",
-      "options": ["Corrugation wear", "Head check wear", "Gauge side wear", "Base wear"],
-      "answer": 2,
-      "marks": 1
-    },
-    {
-      "id": 98,
-      "text": "What is rail grinding used to correct?",
-      "options": ["Rail camber", "Rail corrosion", "Surface defects and corrugations", "Rail length"],
-      "answer": 2,
-      "marks": 1
-    },
-    {
-      "id": 99,
-      "text": "Which device helps in recording track irregularities?",
-      "options": ["GPS tracker", "Track recording car", "Track gauge", "Accelerometer"],
-      "answer": 1,
-      "marks": 1
-    },
-    {
-      "id": 100,
-      "text": "Which parameter indicates the stability of track?",
-      "options": ["Ballast depth", "Rail thickness", "Track modulus", "Sleeper spacing"],
-      "answer": 2,
       "marks": 1
     }
-  ]
-}
 
-    
+    {
+  "id": 31,
+  "text": "If two inductors L1 and L2 connected in series then equivalent inductance (L) is",
+  "options": ["L = L1 + L2", "L = L1×L2/(L1+L2)", "L = 1/L1 + 1/L2", "L = L1 − L2"],
+  "answer": 0,
+  "marks": 1
+},
+{
+  "id": 32,
+  "text": "Cell converts",
+  "options": ["Mechanical energy to electrical energy", "Chemical energy to electrical energy", "Electrical energy to chemical energy", "None"],
+  "answer": 1,
+  "marks": 1
+},
+{
+  "id": 33,
+  "text": "Which solenoid is common for reverse direction in all gears?",
+  "options": ["M4", "M1", "M3", "M2"],
+  "answer": 0,
+  "marks": 1
+},
+{
+  "id": 34,
+  "text": "Delay PCB in B28 panel is",
+  "options": ["EL-T5225", "EL-T5226", "EL-T5227", "EL-T5228"],
+  "answer": 1,
+  "marks": 1
+},
+{
+  "id": 35,
+  "text": "Ignition key is provided in WST machine",
+  "options": ["B2 Panel", "B5 Panel", "B11 Panel", "B13 Panel"],
+  "answer": 1,
+  "marks": 1
+},
+{
+  "id": 36,
+  "text": "Total number of screening units of HOBCM machine",
+  "options": ["2", "4", "3", "1"],
+  "answer": 0,
+  "marks": 1
+},
+{
+  "id": 37,
+  "text": "What is the weightage factor of HOBCM machine age as per IRTM 2019 manual?",
+  "options": ["0.80", "1.50", "1.75", "2.50"],
+  "answer": 2,
+  "marks": 1
+},
+{
+  "id": 38,
+  "text": "With the tamping unit used in Indian Railways how many sleepers cannot be tamped at a time?",
+  "options": ["1", "2", "3", "4"],
+  "answer": 3,
+  "marks": 1
+},
+{
+  "id": 39,
+  "text": "Diameter of engine cylinder is known as",
+  "options": ["Bore", "Clearance volume", "Swept volume", "Stroke length"],
+  "answer": 0,
+  "marks": 1
+},
+{
+  "id": 40,
+  "text": "Specific gravity of high speed diesel is in the range of",
+  "options": ["0.82–0.92", "1.8–3.0", "4.5–5.0", "1.24–1.26"],
+  "answer": 0,
+  "marks": 1
+},
+{
+  "id": 41,
+  "text": "A hydraulic fluid must have enough force to do work of the system and overcome",
+  "options": ["Pressure", "Weight", "Resistance", "None"],
+  "answer": 2,
+  "marks": 1
+},
+{
+  "id": 42,
+  "text": "Air cleaner is fitted ........ turbocharger",
+  "options": ["Before", "After", "Both", "None"],
+  "answer": 0,
+  "marks": 1
+},
+{
+  "id": 43,
+  "text": "In Cummins engine fuel filter is of",
+  "options": ["Paper", "Cloth", "Felt", "None"],
+  "answer": 0,
+  "marks": 1
+},
+{
+  "id": 44,
+  "text": "The lube oil level should be between ........ and ........ mark of dipstick",
+  "options": ["T & B", "H & L", "U & L", "None"],
+  "answer": 1,
+  "marks": 1
+},
+{
+  "id": 45,
+  "text": "Cooling system should become functional when engine",
+  "options": ["Warm up", "Cool down", "Is started", "Runs at rated RPM"],
+  "answer": 0,
+  "marks": 1
+},
+{
+  "id": 46,
+  "text": "In checking tension of B belt, depression at centre should not be more than",
+  "options": ["10 mm", "15 mm", "20 mm", "25 mm"],
+  "answer": 1,
+  "marks": 1
+},
+{
+  "id": 47,
+  "text": "Number of duplex chains of PQRS crane is",
+  "options": ["8", "6", "2", "4"],
+  "answer": 3,
+  "marks": 1
+},
+{
+  "id": 48,
+  "text": "Kodal life of rail grinding machine is",
+  "options": ["12", "15", "20", "25"],
+  "answer": 1,
+  "marks": 1
+},
+{
+  "id": 49,
+  "text": "Maximum speed with full load of PRC T28 crane",
+  "options": ["0.5 kmph", "0.6 kmph", "0.7 kmph", "0.8 kmph"],
+  "answer": 3,
+  "marks": 1
+},
+{
+  "id": 50,
+  "text": "Latest spectrof of RBMV machine is",
+  "options": ["0.5", "0.8", "1.0", "1.5"],
+  "answer": 1,
+  "marks": 1
+},
+{
+  "id": 51,
+  "text": "Which denotes connectors of PCB in Plasser machine?",
+  "options": ["a, b, c", "x, y, z", "p, n, r", "d, b, z"],
+  "answer": 3,
+  "marks": 1
+},
+{
+  "id": 52,
+  "text": "Which is a passive component?",
+  "options": ["Capacitor", "Op-amp", "Transistor", "Diode"],
+  "answer": 0,
+  "marks": 1
+},
+{
+  "id": 53,
+  "text": "What is the operating voltage of LED?",
+  "options": ["Less than 1V", "1 to 3V", "3 to 4V", "5V"],
+  "answer": 1,
+  "marks": 1
+},
+{
+  "id": 54,
+  "text": "A PNP transistor is made of",
+  "options": ["Silicon", "Germanium", "Either silicon or germanium", "None"],
+  "answer": 2,
+  "marks": 1
+},
+{
+  "id": 55,
+  "text": "Encoder converts",
+  "options": ["Machine displacement to digital signal", "Satellite displacement to digital signal", "Both", "None"],
+  "answer": 2,
+  "marks": 1
+},
+{
+  "id": 56,
+  "text": "RAM is a",
+  "options": ["Volatile memory", "Non-volatile memory", "Magnetic memory", "None"],
+  "answer": 0,
+  "marks": 1
+},
+{
+  "id": 57,
+  "text": "1 byte is equal to",
+  "options": ["4 nibble", "8 nibble", "0.25 nibble", "None of these"],
+  "answer": 3,
+  "marks": 1
+},
+{
+  "id": 58,
+  "text": "In program unit Q stands for",
+  "options": ["Input", "Output", "Load output", "Time delay"],
+  "answer": 1,
+  "marks": 1
+},
+{
+  "id": 59,
+  "text": "How many LEDs are there in EK554P / EK654P?",
+  "options": ["8", "12", "24", "32"],
+  "answer": 3,
+  "marks": 1
+},
+{
+  "id": 60,
+  "text": "Cooling coil is helical ........ tube",
+  "options": ["Copper", "Aluminium", "Brass", "Bronze"],
+  "answer": 0,
+  "marks": 1
+},
+{
+  "id": 61,
+  "text": "Brake can be applied by",
+  "options": ["Pneumatic power", "Hydraulic power", "Manually", "All of the above"],
+  "answer": 3,
+  "marks": 1
+},
+{
+  "id": 62,
+  "text": "Gantry track gauge on ATRT is kept",
+  "options": ["3050 mm", "1676 mm", "3400 mm", "None"],
+  "answer": 0,
+  "marks": 1
+},
+{
+  "id": 63,
+  "text": "In DGS 10 liters accumulator pressure is",
+  "options": ["60 bar", "75 bar", "80 bar", "85 bar"],
+  "answer": 0,
+  "marks": 1
+},
+{
+  "id": 64,
+  "text": "How many positions has the 4/3 valve?",
+  "options": ["2", "3", "4", "5"],
+  "answer": 1,
+  "marks": 1
+},
+{
+  "id": 65,
+  "text": "Maximum decrease in original value of viscosity of hydraulic oil is",
+  "options": ["0%", "5%", "10%", "20%"],
+  "answer": 1,
+  "marks": 1
+},
+{
+  "id": 66,
+  "text": "The seal used in D.C. valve is",
+  "options": ["Positive", "Non-positive", "Dynamic", "Static"],
+  "answer": 1,
+  "marks": 1
+},
+{
+  "id": 67,
+  "text": "Diaphragm accumulator is used in",
+  "options": ["Small squeezing circuit", "Big squeezing circuit", "Rail clamp circuit", "None"],
+  "answer": 0,
+  "marks": 1
+},
+{
+  "id": 68,
+  "text": "Rated hydraulic charging pressure of driving pump of BCM/FRM is",
+  "options": ["30 bar", "21 bar", "25 bar", "19 bar"],
+  "answer": 0,
+  "marks": 1
+},
+{
+  "id": 69,
+  "text": "Waste conveyor belt drive pressure in BCM is set at",
+  "options": ["120 bar", "230 bar", "260 bar", "280 bar"],
+  "answer": 1,
+  "marks": 1
+},
+{
+  "id": 70,
+  "text": "Internal diameter of hydraulic pressure hose no.10 is",
+  "options": ["13/8 inch", "5/8 inch", "11/16 inch", "15/16 inch"],
+  "answer": 1,
+  "marks": 1
+},
+{
+  "id": 71,
+  "text": "The sleeper top and rail fittings of running track are cleaned in BRM by unit called",
+  "options": ["Grader plate", "Wings", "Plough", "Brooming"],
+  "answer": 3,
+  "marks": 1
+},
+{
+  "id": 72,
+  "text": "Track recording car measures rail geometry parameter except",
+  "options": ["Gauge", "Unevenness", "Alignment", "Twist"],
+  "answer": 0,
+  "marks": 1
+},
+{
+  "id": 73,
+  "text": "Which document lays down maintenance requirements for points and crossings?",
+  "options": ["IRPWM", "IRSOD", "IRCA", "IRTMM"],
+  "answer": 0,
+  "marks": 1
+},
+{
+  "id": 74,
+  "text": "Recommended ballast profile for speed up to 160 kmph is",
+  "options": ["210 mm", "260 mm", "270 mm", "300 mm"],
+  "answer": 3,
+  "marks": 1
+},
+{
+  "id": 75,
+  "text": "TRC stands for",
+  "options": ["Track Repair Crew", "Track Recording Car", "Track Rail Controller", "Track Remote Check"],
+  "answer": 1,
+  "marks": 1
+},
+{
+  "id": 76,
+  "text": "Normal length of wooden sleeper used in Indian Railways is",
+  "options": ["2500 mm", "2600 mm", "2700 mm", "2800 mm"],
+  "answer": 1,
+  "marks": 1
+},
+{
+  "id": 77,
+  "text": "Primary purpose of rail lubrication is",
+  "options": ["Reduce corrosion", "Reduce rail temperature", "Reduce friction between wheel and rail", "Increase rail hardness"],
+  "answer": 2,
+  "marks": 1
+},
+{
+  "id": 78,
+  "text": "Track cant is used to",
+  "options": ["Reduce vibrations", "Counter centrifugal force on curves", "Prevent gauge widening", "Increase sleeper life"],
+  "answer": 1,
+  "marks": 1
+},
+{
+  "id": 79,
+  "text": "Which of these is not a cause of rail fracture?",
+  "options": ["Fatigue loading", "Manufacturing defects", "Proper rail maintenance", "Welding defects"],
+  "answer": 2,
+  "marks": 1
+},
+{
+  "id": 80,
+  "text": "Shape of rail base is",
+  "options": ["Flat", "Concave", "Convex", "Tapered"],
+  "answer": 0,
+  "marks": 1
+},
+{
+  "id": 81,
+  "text": "Equipment essential for removing old ballast is",
+  "options": ["Rail saw", "Rail bender", "Ballast excavator", "Track recorder"],
+  "answer": 2,
+  "marks": 1
+},
+{
+  "id": 82,
+  "text": "Rail lifter is used to",
+  "options": ["Cut rail", "Straighten rail", "Lift rail during replacement or repair", "Pack ballast"],
+  "answer": 2,
+  "marks": 1
+},
+{
+  "id": 83,
+  "text": "Maximum speed permitted for a material train on descending ghat section is",
+  "options": ["15 kmph", "20 kmph", "30 kmph", "45 kmph"],
+  "answer": 2,
+  "marks": 1
+},
+{
+  "id": 84,
+  "text": "Standard gap of rail fish plate joint is",
+  "options": ["6 mm", "10 mm", "5 mm", "None"],
+  "answer": 0,
+  "marks": 1
+},
+{
+  "id": 85,
+  "text": "Subsidiary rules are framed by",
+  "options": ["CTM", "CSO", "Authorised officer", "Railway Board"],
+  "answer": 2,
+  "marks": 1
+},
+{
+  "id": 86,
+  "text": "Authority for LP when shunting permitted indicator is defective is",
+  "options": ["T.369(1)", "T.806", "PLCT", "T.369/3(B) + PHS"],
+  "answer": 3,
+  "marks": 1
+},
+{
+  "id": 87,
+  "text": "Maximum number of coaches in addition to officers inspection coach attached in rear of SLR is",
+  "options": ["2", "3", "5", "1"],
+  "answer": 0,
+  "marks": 1
+},
+{
+  "id": 88,
+  "text": "BPC of a material train is valid for 30 days in case of UIC rake when examined once in",
+  "options": ["30 days", "21 days", "15 days", "7 days"],
+  "answer": 2,
+  "marks": 1
+},
+{
+  "id": 89,
+  "text": "Steep gradient for shunting of roller bearing wagons is",
+  "options": ["1 in 400", "1 in 600", "1 in 800", "1 in 1000"],
+  "answer": 0,
+  "marks": 1
+},
+{
+  "id": 90,
+  "text": "Accidents are classified into how many categories?",
+  "options": ["2", "3", "4", "5"],
+  "answer": 3,
+  "marks": 1
+},
+{
+  "id": 91,
+  "text": "हिंदी स्टेनोग्राफी परीक्षा उत्तीर्ण करने पर कितने महीनों तक व्यक्तिगत वेतन दिया जाता है?",
+  "options": ["6 माह", "12 माह", "24 माह", "36 माह"],
+  "answer": 2,
+  "marks": 1
+},
+{
+  "id": 92,
+  "text": "राजभाषा अधिनियम 1976 के किस नियम के अंतर्गत हिंदी व अंग्रेजी में नाम पट्ट अनिवार्य हैं?",
+  "options": ["Rule 11(1)", "Rule 11(3)", "Rule 11(2)", "None"],
+  "answer": 1,
+  "marks": 1
+},
+{
+  "id": 93,
+  "text": "गृह मंत्रालय द्वारा विकसित 'मंत्रा' सॉफ्टवेयर किस कार्य के लिए है?",
+  "options": ["अनुवाद", "टंकण", "नोटिंग", "डिक्टेशन"],
+  "answer": 1,
+  "marks": 1
+},
+{
+  "id": 94,
+  "text": "राजभाषा अधिनियम 1963 में कुल कितनी धाराएँ हैं?",
+  "options": ["9", "10", "11", "12"],
+  "answer": 0,
+  "marks": 1
+},
+{
+  "id": 95,
+  "text": "पहला आधिकारिक भाषा आयोग किस वर्ष गठित हुआ?",
+  "options": ["1955", "1960", "1963", "1975"],
+  "answer": 0,
+  "marks": 1
+},
+{
+  "id": 96,
+  "text": "निम्नलिखित में से कौन सी भाषा संविधान की आठवीं अनुसूची में शामिल नहीं है?",
+  "options": ["नेपाली", "उर्दू", "सिंधी", "अंग्रेजी"],
+  "answer": 3,
+  "marks": 1
+},
+{
+  "id": 97,
+  "text": "दुख निवारण हेतु प्रार्थना पत्रों में प्रयुक्त भाषा का उल्लेख किस अनुच्छेद में है?",
+  "options": ["अनुच्छेद 343", "अनुच्छेद 344", "अनुच्छेद 351", "अनुच्छेद 350"],
+  "answer": 3,
+  "marks": 1
+},
+{
+  "id": 98,
+  "text": "भारत के संविधान में राजभाषा से संबंधित प्रावधान किस भाग में है?",
+  "options": ["भाग-15", "भाग-16", "भाग-17", "भाग-18"],
+  "answer": 2,
+  "marks": 1
+},
+{
+  "id": 99,
+  "text": "राजभाषा अधिनियम में प्रथम संशोधन किस वर्ष किया गया?",
+  "options": ["1964", "1967", "1976", "1987"],
+  "answer": 1,
+  "marks": 1
+},
+{
+  "id": 100,
+  "text": "हिमाचल प्रदेश राज्य आधिकारिक भाषा के उपयोग हेतु किस श्रेणी में आता है?",
+  "options": ["अ-क्षेत्र", "ब-क्षेत्र", "स-क्षेत्र", "इनमें से कोई नहीं"],
+  "answer": 0,
+  "marks": 1
+}
+  
