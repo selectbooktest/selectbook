@@ -1,0 +1,366 @@
+{
+  "Railway": {
+    "sectionTitle": "Railway Exams",
+    "exams": {
+      "ALP": {
+        "examKey": "ALP",
+        "title": "RRB Assistant Loco Pilot",
+        "tests": {
+          "FULL_TEST": [
+            "ALP_FULL_01",
+            "ALP_FULL_02",
+            "ALP_FULL_03",
+            "ALP_FULL_04",
+            "ALP_FULL_05"
+          ],
+          "SECTIONAL_TEST": [
+            "ALP_MATH_01",
+            "ALP_REASONING_01",
+            "ALP_GS_01",
+            "ALP_SCIENCE_01",
+            "ALP_CURRENT_01"
+          ],
+          "PREVIOUS_YEAR_PAPER": [
+            "ALP_PYQ_2018",
+            "ALP_PYQ_2019",
+            "ALP_PYQ_2020",
+            "ALP_PYQ_2021",
+            "ALP_PYQ_2022"
+          ],
+          "TOPIC_WISE_TEST": [
+            "ALP_TOPIC_TIME_SPEED",
+            "ALP_TOPIC_PROFIT_LOSS",
+            "ALP_TOPIC_ELECTRICITY",
+            "ALP_TOPIC_MECHANICS",
+            "ALP_TOPIC_THERMODYNAMICS"
+          ]
+        }
+      },
+
+      "TECHNICIAN": {
+        "examKey": "TECHNICIAN",
+        "title": "RRB Technician",
+        "tests": {
+          "FULL_TEST": [
+            "TECH_FULL_01",
+            "TECH_FULL_02",
+            "TECH_FULL_03",
+            "TECH_FULL_04",
+            "TECH_FULL_05"
+          ],
+          "SECTIONAL_TEST": [
+            "TECH_ELECTRICAL_01",
+            "TECH_MECHANICAL_01",
+            "TECH_MATH_01",
+            "TECH_REASONING_01",
+            "TECH_GK_01"
+          ],
+          "PREVIOUS_YEAR_PAPER": [
+            "TECH_PYQ_2018",
+            "TECH_PYQ_2019",
+            "TECH_PYQ_2020",
+            "TECH_PYQ_2021",
+            "TECH_PYQ_2022"
+          ],
+          "TOPIC_WISE_TEST": [
+            "TECH_TOPIC_CIRCUITS",
+            "TECH_TOPIC_MOTORS",
+            "TECH_TOPIC_POWER",
+            "TECH_TOPIC_MEASUREMENT",
+            "TECH_TOPIC_SAFETY"
+          ]
+        }
+      },
+
+      "NTPC": {
+        "examKey": "NTPC",
+        "title": "RRB NTPC",
+        "tests": {
+          "FULL_TEST": [
+            "NTPC_FULL_01",
+            "NTPC_FULL_02",
+            "NTPC_FULL_03",
+            "NTPC_FULL_04",
+            "NTPC_FULL_05"
+          ],
+          "SECTIONAL_TEST": [
+            "NTPC_MATH_01",
+            "NTPC_REASONING_01",
+            "NTPC_GK_01",
+            "NTPC_CURRENT_01",
+            "NTPC_SCIENCE_01"
+          ],
+          "PREVIOUS_YEAR_PAPER": [
+            "NTPC_PYQ_2016",
+            "NTPC_PYQ_2017",
+            "NTPC_PYQ_2018",
+            "NTPC_PYQ_2019",
+            "NTPC_PYQ_2020"
+          ],
+          "TOPIC_WISE_TEST": [
+            "NTPC_TOPIC_RATIO",
+            "NTPC_TOPIC_PERCENTAGE",
+            "NTPC_TOPIC_SYLLOGISM",
+            "NTPC_TOPIC_HISTORY",
+            "NTPC_TOPIC_GEOGRAPHY"
+          ]
+        }
+      },
+
+      "RPF": {
+        "examKey": "RPF",
+        "title": "RPF SI & Constable",
+        "tests": {
+          "FULL_TEST": [
+            "RPF_FULL_01",
+            "RPF_FULL_02",
+            "RPF_FULL_03",
+            "RPF_FULL_04",
+            "RPF_FULL_05"
+          ],
+          "SECTIONAL_TEST": [
+            "RPF_GK_01",
+            "RPF_REASONING_01",
+            "RPF_MATH_01",
+            "RPF_CURRENT_01",
+            "RPF_SCIENCE_01"
+          ],
+          "PREVIOUS_YEAR_PAPER": [
+            "RPF_PYQ_2018",
+            "RPF_PYQ_2019",
+            "RPF_PYQ_2020",
+            "RPF_PYQ_2021",
+            "RPF_PYQ_2022"
+          ],
+          "TOPIC_WISE_TEST": [
+            "RPF_TOPIC_LAW",
+            "RPF_TOPIC_CONSTITUTION",
+            "RPF_TOPIC_GK",
+            "RPF_TOPIC_SECURITY",
+            "RPF_TOPIC_ETHICS"
+          ]
+        }
+      },
+
+      "GROUP_D": {
+        "examKey": "GROUP_D",
+        "title": "RRC Group D",
+        "tests": {
+          "FULL_TEST": [
+            "GD_FULL_01",
+            "GD_FULL_02",
+            "GD_FULL_03",
+            "GD_FULL_04",
+            "GD_FULL_05"
+          ],
+          "SECTIONAL_TEST": [
+            "GD_MATH_01",
+            "GD_REASONING_01",
+            "GD_GK_01",
+            "GD_SCIENCE_01",
+            "GD_CURRENT_01"
+          ],
+          "PREVIOUS_YEAR_PAPER": [
+            "GD_PYQ_2018",
+            "GD_PYQ_2019",
+            "GD_PYQ_2020",
+            "GD_PYQ_2021",
+            "GD_PYQ_2022"
+          ],
+          "TOPIC_WISE_TEST": [
+            "GD_TOPIC_TIME_WORK",
+            "GD_TOPIC_BLOOD_RELATION",
+            "GD_TOPIC_ELECTRICITY",
+            "GD_TOPIC_CHEMISTRY",
+            "GD_TOPIC_ENVIRONMENT"
+          ]
+        }
+      }
+    }
+  },
+
+  "SSC": {
+    "sectionTitle": "SSC Exams",
+    "exams": {
+      "SSC_GD": {
+        "examKey": "SSC_GD",
+        "title": "SSC GD Constable",
+        "tests": {
+          "FULL_TEST": [
+            "SSC_GD_FULL_01",
+            "SSC_GD_FULL_02",
+            "SSC_GD_FULL_03",
+            "SSC_GD_FULL_04",
+            "SSC_GD_FULL_05"
+          ],
+          "SECTIONAL_TEST": [
+            "SSC_GD_GK_01",
+            "SSC_GD_REASONING_01",
+            "SSC_GD_MATH_01",
+            "SSC_GD_CURRENT_01",
+            "SSC_GD_SCIENCE_01"
+          ],
+          "PREVIOUS_YEAR_PAPER": [
+            "SSC_GD_PYQ_2018",
+            "SSC_GD_PYQ_2019",
+            "SSC_GD_PYQ_2020",
+            "SSC_GD_PYQ_2021",
+            "SSC_GD_PYQ_2022"
+          ],
+          "TOPIC_WISE_TEST": [
+            "SSC_GD_TOPIC_GK",
+            "SSC_GD_TOPIC_REASONING",
+            "SSC_GD_TOPIC_MATH",
+            "SSC_GD_TOPIC_CURRENT",
+            "SSC_GD_TOPIC_SCIENCE"
+          ]
+        }
+      },
+
+      "DELHI_POLICE": {
+        "examKey": "DELHI_POLICE",
+        "title": "Delhi Police Constable",
+        "tests": {
+          "FULL_TEST": [
+            "DP_FULL_01",
+            "DP_FULL_02",
+            "DP_FULL_03",
+            "DP_FULL_04",
+            "DP_FULL_05"
+          ],
+          "SECTIONAL_TEST": [
+            "DP_GK_01",
+            "DP_REASONING_01",
+            "DP_MATH_01",
+            "DP_CURRENT_01",
+            "DP_SCIENCE_01"
+          ],
+          "PREVIOUS_YEAR_PAPER": [
+            "DP_PYQ_2018",
+            "DP_PYQ_2019",
+            "DP_PYQ_2020",
+            "DP_PYQ_2021",
+            "DP_PYQ_2022"
+          ],
+          "TOPIC_WISE_TEST": [
+            "DP_TOPIC_GK",
+            "DP_TOPIC_REASONING",
+            "DP_TOPIC_MATH",
+            "DP_TOPIC_CURRENT",
+            "DP_TOPIC_SCIENCE"
+          ]
+        }
+      }
+    }
+  },
+
+  "Rajasthan": {
+    "sectionTitle": "Rajasthan State Govt Exams",
+    "exams": {
+      "RAJ_POLICE": {
+        "examKey": "RAJ_POLICE",
+        "title": "Rajasthan Police Constable",
+        "tests": {
+          "FULL_TEST": [
+            "RP_FULL_01",
+            "RP_FULL_02",
+            "RP_FULL_03",
+            "RP_FULL_04",
+            "RP_FULL_05"
+          ],
+          "SECTIONAL_TEST": [
+            "RP_GK_01",
+            "RP_HISTORY_01",
+            "RP_POLITY_01",
+            "RP_REASONING_01",
+            "RP_MATH_01"
+          ],
+          "PREVIOUS_YEAR_PAPER": [
+            "RP_PYQ_2018",
+            "RP_PYQ_2019",
+            "RP_PYQ_2020",
+            "RP_PYQ_2021",
+            "RP_PYQ_2022"
+          ],
+          "TOPIC_WISE_TEST": [
+            "RP_TOPIC_RAJS_HISTORY",
+            "RP_TOPIC_RAJS_GEO",
+            "RP_TOPIC_CURRENT",
+            "RP_TOPIC_POLITY",
+            "RP_TOPIC_ECONOMY"
+          ]
+        }
+      },
+
+      "PATWARI": {
+        "examKey": "PATWARI",
+        "title": "Rajasthan Patwari",
+        "tests": {
+          "FULL_TEST": [
+            "PAT_FULL_01",
+            "PAT_FULL_02",
+            "PAT_FULL_03",
+            "PAT_FULL_04",
+            "PAT_FULL_05"
+          ],
+          "SECTIONAL_TEST": [
+            "PAT_GK_01",
+            "PAT_MATH_01",
+            "PAT_REASONING_01",
+            "PAT_CURRENT_01",
+            "PAT_ECONOMY_01"
+          ],
+          "PREVIOUS_YEAR_PAPER": [
+            "PAT_PYQ_2017",
+            "PAT_PYQ_2018",
+            "PAT_PYQ_2019",
+            "PAT_PYQ_2020",
+            "PAT_PYQ_2021"
+          ],
+          "TOPIC_WISE_TEST": [
+            "PAT_TOPIC_RAJS_HISTORY",
+            "PAT_TOPIC_RAJS_GEO",
+            "PAT_TOPIC_CURRENT",
+            "PAT_TOPIC_ECONOMY",
+            "PAT_TOPIC_POLITY"
+          ]
+        }
+      },
+
+      "VDO": {
+        "examKey": "VDO",
+        "title": "Village Development Officer",
+        "tests": {
+          "FULL_TEST": [
+            "VDO_FULL_01",
+            "VDO_FULL_02",
+            "VDO_FULL_03",
+            "VDO_FULL_04",
+            "VDO_FULL_05"
+          ],
+          "SECTIONAL_TEST": [
+            "VDO_GK_01",
+            "VDO_REASONING_01",
+            "VDO_MATH_01",
+            "VDO_CURRENT_01",
+            "VDO_RAJS_GK_01"
+          ],
+          "PREVIOUS_YEAR_PAPER": [
+            "VDO_PYQ_2018",
+            "VDO_PYQ_2019",
+            "VDO_PYQ_2020",
+            "VDO_PYQ_2021",
+            "VDO_PYQ_2022"
+          ],
+          "TOPIC_WISE_TEST": [
+            "VDO_TOPIC_RAJS_GK",
+            "VDO_TOPIC_POLITY",
+            "VDO_TOPIC_HISTORY",
+            "VDO_TOPIC_ECONOMY",
+            "VDO_TOPIC_CURRENT"
+          ]
+        }
+      }
+    }
+  }
+      }
